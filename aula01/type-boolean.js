@@ -1,7 +1,7 @@
 //Type boolean
 const primeiroValor = true;
 const segundoValor = false; 
-//= significa atribuição
+//= significa atribuição 
 //== comparação se o valor é igual
 //=== compara o valor e o tipo do dado
 const valorIgual = primeiroValor === segundoValor;
