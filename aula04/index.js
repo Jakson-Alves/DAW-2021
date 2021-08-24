@@ -1,13 +1,14 @@
 //instanciar o express
 const express = require('express');
-const routes = require('./routes');
+const produtoRouter = require('./routes/produto-router');
+
 const app = express();
 
 const PORT = 3000;
 
 //Middleware
 app.use(express.json());
-app.use(routes);
+app.use(produtoRouter);
 
 //Rota principal
 app.get('/', (req, res) => {
