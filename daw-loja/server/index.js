@@ -1,5 +1,6 @@
 //importanto rotas
 const groupRouter = require('./routes/group-router')
+const productRouter = require('./routes/product-router')
 
 //importa o express
 const express = require('express');
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 
 //Demais rotas
 app.use('/groups', groupRouter);
+app.use('/products', productRouter);
 
 //Comando para levantar a aplicação
 app.listen(PORT, () => {

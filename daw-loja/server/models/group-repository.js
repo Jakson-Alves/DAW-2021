@@ -11,17 +11,17 @@ module.exports = {
     //select * from group where id = ?
     findByid: (params) => {
         return knex.select().from('group').where('id', params.id);
-    }
+    },
 
     //insert
     create: (params) => {
         return knex.insert(params).into('group');
-    }
+    },
 
     //update
     update: (params) => {
         return knex('group').update(params).where('id', params.id);
-    }
+    },
 
     //delete
     delete: (params) => {

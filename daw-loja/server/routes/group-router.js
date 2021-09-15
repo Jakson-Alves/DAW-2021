@@ -5,11 +5,11 @@ const groupController = require('../controllers/group-controller');
 
 
 routes.route('/')
-    .get('/', groupController.index)
-    .post('/', groupController.create);
+    .get(groupController.index)
+    .post(groupController.create);
 
 routes.route('/:id')
-    .group(Controller.show)
+    .get(groupController.show)
     .put(groupController.update)
     .delete(groupController.delete);
 

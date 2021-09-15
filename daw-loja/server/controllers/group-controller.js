@@ -11,7 +11,7 @@ module.exports = {
             return res.json(result);
 
         } catch (error) {
-            res.status(500).json({message: error.message})
+            return res.status(500).json({message: error.message})
         }
     },
 
@@ -21,10 +21,11 @@ module.exports = {
 
         try {
             const result = await repository.create(group);
-            return res.status(201).json(result);
+            group.id = result[0]
+            res.status(201).json(group);
 
         } catch (error) {
-            res.status(500).json({message: error.message})
+            return res.status(500).json({message: error.message})
         }
     },      
 
@@ -40,7 +41,7 @@ module.exports = {
             return res.json(result)
 
         } catch (error) {
-            res.status(500).json({message: error.message})    
+            return res.status(500).json({message: error.message})    
         }
     },
 
@@ -59,7 +60,7 @@ module.exports = {
             return res.json(group)
 
         } catch (error) {
-            res.status(500).json({message: error.message})    
+            return res.status(500).json({message: error.message})    
         }
     },
 
@@ -76,7 +77,7 @@ module.exports = {
 
 
         } catch (error) {
-            res.status(500).json({message: error.message})    
+            return res.status(500).json({message: error.message})    
         }
     }
 }
