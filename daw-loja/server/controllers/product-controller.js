@@ -24,7 +24,7 @@ module.exports = {
         const product = req.body;
 
         try {
-            //Chamo a função insere o registro no banco de dados
+            //Chama a função insere o registro no banco de dados
             const result = await repository.create(product);
 
             //Pedo o ID criado (em result[0]) e atribuo no result.id
@@ -75,7 +75,7 @@ module.exports = {
             }
             
             //Se não entrou no IF acima, significa que encontrou o registro e pode ser alterado
-            await repository.update()
+            await repository.update(product);
 
             //Retorn o registro alterado
             res.json(product)
@@ -93,12 +93,13 @@ module.exports = {
 
             //Testo se encontrou algum registro com o ID passado por parâmetro
             if (result.lenght === 0) {
+                //Não encontrado
                 return res.status(404).json({message: 'Not found'});
             }
              //Se não entrou no IF acima, significa que encontrou o registro e pode ser apagado
             await repository.delete(req.params);
 
-            //retorna que deu certo
+            //retorna o status 204 -> Sem conteúdo
             return res.status(204).json();
 
 

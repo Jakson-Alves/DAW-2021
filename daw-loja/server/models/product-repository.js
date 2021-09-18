@@ -9,7 +9,8 @@ module.exports = {
 
     //select * from product where id = ?
     findByid: (params) => {
-        return knex.select().from('product').where('id', params.id);
+        //select * from product where id = params.id
+        return knex.select('p.*', 'g.name as group_name').from('product as p').innerJoin('group as g', 'g.id', 'p.group_id').where('p.id', params.id);
     },
 
     //insert
