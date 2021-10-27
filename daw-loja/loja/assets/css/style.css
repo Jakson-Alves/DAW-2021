@@ -23,3 +23,9 @@ header nav li a:hover {
 header nav li {
     text-transform: uppercase;
 }
+
+.collection {
+    display: flex;
+    flex-direction: row;
+    
+}
