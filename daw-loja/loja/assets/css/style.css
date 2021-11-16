@@ -122,3 +122,47 @@ header nav li {
     background-color: #550874;
     border-color: #550874;
 }
+
+.brands ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.brands ul li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+}
+
+footer {
+    background-color: #515D6A;
+    padding: 48px 0;
+    color: #fff;
+}
+
+footer h5 {
+    margin: 0 0 32px 48px;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #999999;
+    text-decoration: underline;
+}
+
+
