@@ -1,0 +1,19 @@
+footer {
+    background-color: #515D6A;
+    padding: 48px 0;
+    color: #fff;
+}
+
+footer h5 {
+    margin: 0 0 32px 48px;
+}
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #999999;
+    text-decoration: underline;
+}

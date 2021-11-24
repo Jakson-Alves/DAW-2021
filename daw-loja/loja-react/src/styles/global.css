@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    color: #29292e;
+}
+
+.products,
+.collection {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 32px 0;
+    justify-content: center;
+}
+
+.products .card-body {
+    font-weight: 400;
+    text-align: center;
+}
+
+.products .card-body .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.products .details .price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.products .details .star-rating,
+.products .details .price h3 {
+    color: #a237cc;
+}
+
+.products .details .price p {
+    font-size: 12px;
+}
+
+.newsletter {
+    background-color: #f7f9fa;
+    margin: 32px 0;
+    padding: 32px 0; 
+}
+
+.newsletter .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletter .container h2{
+    color: #a237cc;
+    font-weight: 400px;
+    font-size: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletter form input {
+    width: 300px;
+}
+
+.newsletter form button {
+    background-color: #a237cc;
+    border-color: #a237cc;
+    text-transform: uppercase;
+}
+
+.newsletter form button:hover {
+    background-color: #550874;
+    border-color: #550874;
+}
+
+
+
