@@ -6,11 +6,11 @@ import { Brands } from "./components/Brand";
 
 function App() {
   const brands = [
-    {alt: 'brand1', source: '"assets/images/brand1.png"'},
-    {alt: 'brand2', source: '"assets/images/brand2.png"'},
-    {alt: 'brand3', source: '"assets/images/brand3.png"'},
-    {alt: 'brand4', source: '"assets/images/brand4.png"'},
-    {alt: 'brand5', source: '"assets/images/brand5.png"'}
+    {alt: 'brand1', source: 'assets/images/brand1.png'},
+    {alt: 'brand2', source: 'assets/images/brand2.png'},
+    {alt: 'brand3', source: 'assets/images/brand3.png'},
+    {alt: 'brand4', source: 'assets/images/brand4.png'},
+    {alt: 'brand5', source: 'assets/images/brand5.png'}
   ];
   
   return (
