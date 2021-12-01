@@ -2,6 +2,9 @@
 const groupRouter = require('./routes/group-router')
 const productRouter = require('./routes/product-router')
 
+//importa cors
+const cors = require('cors');
+
 //importa o express
 const express = require('express');
 
@@ -9,10 +12,11 @@ const express = require('express');
 const app = express();
 
 //Porta
-const PORT = 3333;
+const PORT = 3306;
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 
 //Rota principal para testar se funcionou
 app.get('/', (req, res) => {
@@ -23,7 +27,7 @@ app.get('/', (req, res) => {
 app.use('/groups', groupRouter);
 app.use('/products', productRouter);
 
-//Comando para levantar a aplicação
+//Comando para levantar a aplicacao
 app.listen(PORT, () => {
     console.log(`Executando na porta ${PORT}`)
 })

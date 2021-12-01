@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.products .card-body {
+.products .card-body h5{
     font-weight: 400;
     text-align: center;
 }
@@ -18,7 +18,7 @@
     margin-top: 32px;
 }
 
-.products .details .price {
+.products .details .price p{
     display: flex;
     flex-direction: column;
     align-items: end;
