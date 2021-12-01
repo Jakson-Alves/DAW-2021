@@ -18,14 +18,13 @@ function App() {
     {alt: 'brand5', source: 'assets/images/brand5.png'}
   ];
 
-  const testaProduct = [
-    {id: 1, name: 'Conjunto de casaco e calça preta', description: '', price: 300, likes: 2, photo: 'produtc1.jpg' }
-  ];
+  // const testaProduct = [
+  //   {id: 1, name: 'Conjunto de casaco e calça preta', description: '', price: 300, likes: 2, photo: 'produtc1.jpg' }
+  // ];
 
   const [products, setProducts] = useState<Product[]>([] as Product[]);
   
   useEffect(() => {
-
     axios.get('http://localhost:3333/products')
     .then(result => {
       setProducts(result.data)
@@ -33,7 +32,6 @@ function App() {
     .catch(error =>{
       console.log(error);
     })
-
   }, [])
   
   return (

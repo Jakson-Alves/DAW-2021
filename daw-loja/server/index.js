@@ -12,7 +12,7 @@ const express = require('express');
 const app = express();
 
 //Porta
-const PORT = 3306;
+const PORT = 3333;
 
 //Middleware
 app.use(express.json());
